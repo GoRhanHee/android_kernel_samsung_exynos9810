@@ -19,5 +19,7 @@ O=out
 
 DEFCONFIG="exynos9810-${DEVICE}kor_defconfig"
 
-make ${MAKE_ARGS} ${DEFCONFIG} || exit 1
+echo -e "\nCONFIG_MACH_EXYNOS9810_${DEVICE^^}_KOR=y" >> "arch/arm64/configs/gorhanhee.config"
+
+make ${MAKE_ARGS} ${DEFCONFIG} gorhanhee.config|| exit 1
 make ${MAKE_ARGS} || exit 1
