@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Import submodule
+git submodule init && git submodule update --remote
+
 # Setting
 export ANDROID_BUILD_TOP=$(pwd)
 export DEVICE=$1
