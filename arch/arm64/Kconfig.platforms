@@ -285,6 +285,24 @@ config ARCH_EXYNOS9
 	help
 	  Samsung EXYNOS9 (Meercat/Ananke) SoC based systems
 
+config MACH_EXYNOS9810_STARLTE_KOR
+	bool "Cooking dtb for STARLTE"
+	default n
+	help
+	  Enable this option to build dtb for Galaxy S9 Korean model
+
+config MACH_EXYNOS9810_STAR2LTE_KOR
+	bool "Cooking dtb for STAR2LTE"
+	default n
+	help
+	  Enable this option to build dtb for Galaxy S9+ Korean model
+
+config MACH_EXYNOS9810_CROWNLTE_KOR
+	bool "Cooking dtb for CROWNLTE"
+	default n
+	help
+	  Enable this option to build dtb for Galaxy Note9 Korean model
+
 config ZONE_MOVABLE
 	bool "Enable Zone Movable"
 	default n
