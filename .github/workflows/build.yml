@@ -1,4 +1,4 @@
-name: Samsung SM8250 Kernel Build
+name: Samsung Exynos9810 Kernel Build
 
 on:
   workflow_dispatch:
