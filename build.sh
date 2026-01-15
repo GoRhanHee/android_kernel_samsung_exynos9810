@@ -39,10 +39,10 @@ make ${MAKE_ARGS} || exit 1
 chmod +x ${ANDROID_BUILD_TOP}/prebuilts/*
 
 unzip -jo ${ANDROID_BUILD_TOP}/prebuilts/${DEVICE}/boot.zip boot.img -d ${ANDROID_BUILD_TOP}/prebuilts/${DEVICE}/
-./magiskboot unpack boot.img
+./prebuilts/magiskboot unpack boot.img
 cp ${ANDROID_BUILD_TOP}/out/arch/arm64/boot/Image ${ANDROID_BUILD_TOP}/prebuilts/${DEVICE}/kernel
 cp ${ANDROID_BUILD_TOP}/out/arch/arm64/boot/dtb.img ${ANDROID_BUILD_TOP}/prebuilts/${DEVICE}/extra
-./magiskboot repack boot.img
+./prebuilts/magiskboot repack boot.img
 cp ${ANDROID_BUILD_TOP}/prebuilts/${DEVICE}/new-boot.img ${ANDROID_BUILD_TOP}/prebuilts/zip/boot.img
 
 # Cooking Flashable *.zip file
