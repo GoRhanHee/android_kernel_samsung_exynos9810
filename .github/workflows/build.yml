@@ -44,9 +44,11 @@ jobs:
       - name: "Build for specific device"
         run: ./build.sh ${{ matrix.device }} ${{ github.event.inputs.KSU }}
 
-      - name: Upload Artifacts Kernel Output File
+      - name: Upload Artifacts Kernel File
         uses: actions/upload-artifact@v4
         with:
-          name: "${{ matrix.device }}_OUTPUT_File"
+          name: "${{ matrix.device }}_Kernel_File"
           path: |
+           ./prebuilts/zip/*.zip
+           ./prebuilts/zip/boot.img
            ./out/arch/arm64/boot/*
