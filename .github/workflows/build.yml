@@ -2,7 +2,14 @@ name: Samsung Exynos9810 Kernel Build
 
 on:
   workflow_dispatch:
-
+    inputs:
+      KSU:
+        description: 'Do you want to include KernelSU?'
+        required: true
+        type: choice
+        options:
+          - y
+          - n
 jobs:
   build:
     strategy:
@@ -35,7 +42,7 @@ jobs:
         run: chmod +x build.sh
 
       - name: "Build for specific device"
-        run: ./build.sh ${{ matrix.device }}
+        run: ./build.sh ${{ matrix.device }} ${{ github.event.inputs.KSU }}
 
       - name: Upload Artifacts Kernel Output File
         uses: actions/upload-artifact@v4
