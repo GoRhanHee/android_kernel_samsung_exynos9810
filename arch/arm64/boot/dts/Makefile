@@ -1,30 +1,30 @@
 # SPDX-License-Identifier: GPL-2.0
 
 # Galaxy Note9
-dtb-y += exynos/exynos9810-crownlte_kor_21.dtb
-dtb-y += exynos/exynos9810-crownlte_kor_19.dtb
-dtb-y += exynos/exynos9810-crownlte_kor_26.dtb
-dtb-y += exynos/exynos9810-crownlte_kor_18.dtb
-dtb-y += exynos/exynos9810-crownlte_kor_23.dtb
-dtb-y += exynos/exynos9810-crownlte_kor_25.dtb
-dtb-y += exynos/exynos9810-crownlte_kor_24.dtb
-dtb-y += exynos/exynos9810-crownlte_kor_17.dtb
+dtb-$(CONFIG_MACH_EXYNOS9810_CROWNLTE_KOR) += exynos/exynos9810-crownlte_kor_21.dtb
+dtb-$(CONFIG_MACH_EXYNOS9810_CROWNLTE_KOR) += exynos/exynos9810-crownlte_kor_19.dtb
+dtb-$(CONFIG_MACH_EXYNOS9810_CROWNLTE_KOR) += exynos/exynos9810-crownlte_kor_26.dtb
+dtb-$(CONFIG_MACH_EXYNOS9810_CROWNLTE_KOR) += exynos/exynos9810-crownlte_kor_18.dtb
+dtb-$(CONFIG_MACH_EXYNOS9810_CROWNLTE_KOR) += exynos/exynos9810-crownlte_kor_23.dtb
+dtb-$(CONFIG_MACH_EXYNOS9810_CROWNLTE_KOR) += exynos/exynos9810-crownlte_kor_25.dtb
+dtb-$(CONFIG_MACH_EXYNOS9810_CROWNLTE_KOR) += exynos/exynos9810-crownlte_kor_24.dtb
+dtb-$(CONFIG_MACH_EXYNOS9810_CROWNLTE_KOR) += exynos/exynos9810-crownlte_kor_17.dtb
 
 # Galaxy S9
-dtb-y += exynos/exynos9810-starlte_kor_17.dtb
-dtb-y += exynos/exynos9810-starlte_kor_18.dtb
-dtb-y += exynos/exynos9810-starlte_kor_23.dtb
-dtb-y += exynos/exynos9810-starlte_kor_16.dtb
-dtb-y += exynos/exynos9810-starlte_kor_26.dtb
-dtb-y += exynos/exynos9810-starlte_kor_20.dtb
+dtb-$(CONFIG_MACH_EXYNOS9810_STARLTE_KOR) += exynos/exynos9810-starlte_kor_17.dtb
+dtb-$(CONFIG_MACH_EXYNOS9810_STARLTE_KOR) += exynos/exynos9810-starlte_kor_18.dtb
+dtb-$(CONFIG_MACH_EXYNOS9810_STARLTE_KOR) += exynos/exynos9810-starlte_kor_23.dtb
+dtb-$(CONFIG_MACH_EXYNOS9810_STARLTE_KOR) += exynos/exynos9810-starlte_kor_16.dtb
+dtb-$(CONFIG_MACH_EXYNOS9810_STARLTE_KOR) += exynos/exynos9810-starlte_kor_26.dtb
+dtb-$(CONFIG_MACH_EXYNOS9810_STARLTE_KOR) += exynos/exynos9810-starlte_kor_20.dtb
 
 # Galaxy S9+
-dtb-y += exynos/exynos9810-star2lte_kor_26.dtb
-dtb-y += exynos/exynos9810-star2lte_kor_23.dtb
-dtb-y += exynos/exynos9810-star2lte_kor_18.dtb
-dtb-y += exynos/exynos9810-star2lte_kor_20.dtb
-dtb-y += exynos/exynos9810-star2lte_kor_16.dtb
-dtb-y += exynos/exynos9810-star2lte_kor_17.dtb
+dtb-$(CONFIG_MACH_EXYNOS9810_STAR2LTE_KOR) += exynos/exynos9810-star2lte_kor_26.dtb
+dtb-$(CONFIG_MACH_EXYNOS9810_STAR2LTE_KOR) += exynos/exynos9810-star2lte_kor_23.dtb
+dtb-$(CONFIG_MACH_EXYNOS9810_STAR2LTE_KOR) += exynos/exynos9810-star2lte_kor_18.dtb
+dtb-$(CONFIG_MACH_EXYNOS9810_STAR2LTE_KOR) += exynos/exynos9810-star2lte_kor_20.dtb
+dtb-$(CONFIG_MACH_EXYNOS9810_STAR2LTE_KOR) += exynos/exynos9810-star2lte_kor_16.dtb
+dtb-$(CONFIG_MACH_EXYNOS9810_STAR2LTE_KOR) += exynos/exynos9810-star2lte_kor_17.dtb
 
 targets += dtbs
 DTB_LIST  := $(dtb-y) $(dtbo-y)
