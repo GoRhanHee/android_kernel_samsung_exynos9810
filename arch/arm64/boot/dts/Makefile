@@ -18,6 +18,14 @@ dtb-y += exynos/exynos9810-starlte_kor_16.dtb
 dtb-y += exynos/exynos9810-starlte_kor_26.dtb
 dtb-y += exynos/exynos9810-starlte_kor_20.dtb
 
+# Galaxy S9+
+dtb-y += exynos/exynos9810-star2lte_kor_26.dtb
+dtb-y += exynos/exynos9810-star2lte_kor_23.dtb
+dtb-y += exynos/exynos9810-star2lte_kor_18.dtb
+dtb-y += exynos/exynos9810-star2lte_kor_20.dtb
+dtb-y += exynos/exynos9810-star2lte_kor_16.dtb
+dtb-y += exynos/exynos9810-star2lte_kor_17.dtb
+
 targets += dtbs
 DTB_LIST  := $(dtb-y) $(dtbo-y)
 always    := $(DTB_LIST)
